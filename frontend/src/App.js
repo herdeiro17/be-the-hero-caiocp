@@ -1,25 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'; // o useState precisa ser iniciado para poder fazer alterações no código
+import './global.css';
+
+import Routes from './routes';//não precisa colocar tb /index pq ele já puxa automático esse arquivo
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Caio Crisóstomo.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return ( 
+    <div> 
+      <Routes />
+    </div>//essa estrutura div abaixo precisa ser utilizada para agrupar mais de uma TAG
   );
 }
 
